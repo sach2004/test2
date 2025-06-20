@@ -4,7 +4,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export default async function POST(req) {
+export  async function POST(req) {
   try {
     const { email, password } = await req.json();
 
